@@ -72,7 +72,7 @@
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.8;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -82,11 +82,12 @@
 				background-color: transparentize(_palette(bg), 0.75);
 				content: '';
 				display: block;
-				height: 100%;
+				height: 90%;
 				left: 0;
 				position: absolute;
+				opacity: 0.25;
 				top: 0;
-				width: 100%;
+				width: 90%;
 				z-index: 1;
 			}
 
