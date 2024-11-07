@@ -1,10 +1,10 @@
 # site settings
 title: Grajska.si
-subtitle: A little bit of everything
+subtitle: My place of zen
 email: tom@astrosketch.net
 description: Here's my eclectic mix of astro and landscape photography,<br />  motorcycle videos, music, programming and other DIY projects.
-baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://grajska.si # the base hostname & protocol for your site
 author: Tomaž Orač
 # street_address: 1234 Somewhere Road
 # city:
@@ -22,7 +22,7 @@ tiles-count: 4
 # Icons are not shown if value is empty
 # You need to restart jekyll for changes to have an effect
 socials:
-  GitHub: https://github.com/andrewbanchich
+  GitHub: https://github.com/tomorac
 #  GitLab:
 #  Google-Plus:
 #  Instagram:
