@@ -1,7 +1,7 @@
 ---
 title: Music
 layout: post
-image: assets/images/pic10.jpg
+image: assets/images/music_tile.jpg
 description: Lorem ipsum dolor est
 nav-menu: true
 # show_tile: false
