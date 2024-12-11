@@ -2,7 +2,7 @@
 title: Music
 layout: post
 image: assets/images/music_tile.jpg
-description: Lorem ipsum dolor est
+description: 'I used to play in a band but then swapped<br /> my metal axe for an acoustic guitar.'
 nav-menu: true
 # show_tile: false
 ---

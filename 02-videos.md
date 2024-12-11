@@ -1,7 +1,7 @@
 ---
 title: Videos
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: 'Motorcycle videos to pass winter downtime<br />or help you chill before bedtime.'
 image: assets/images/video_tile.jpg
 nav-menu: true
 ---

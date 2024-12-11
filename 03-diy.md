@@ -1,8 +1,8 @@
 ---
-title: Programming & DIY
+title: DIY & programming  
 layout: allposts
 image: assets/images/diy_tile.jpg
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: 'A place to dump the (few) useful conclusions<br />of the many projects I start (and sometimes finish).'
 landing-title: 'DIY'
 nav-menu: true
 author: null

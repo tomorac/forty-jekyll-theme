@@ -1,7 +1,7 @@
 ---
 title: Photos
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: 'Mostly astro and landscape photos. Satellites, bikes and other animals<br /> might occasionally photobomb the images.'
 image: assets/images/photo_tile.jpg
 nav-menu: true
 ---
