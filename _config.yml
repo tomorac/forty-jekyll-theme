@@ -1,7 +1,7 @@
 # site settings
 title: Grajska.si
 subtitle: My place of zen
-email: info@grajska.si
+email: tom@grajska.si
 form_endpoint: /your/form # Formspree generated endpoint
 description: Here's my eclectic mix of astro and landscape photography,<br />  motorcycle videos, music, programming and other DIY projects.
 baseurl: "" # the subpath of your site, e.g. /blog
