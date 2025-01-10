@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    Based on allposts from Forty by HTML5 UP
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+        {% include header.html %} 
+    
+        <section id="banner" class="style2">
+            <div class="inner">
+                <span class="image">
+                    <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+                </span>
+                <header class="major">
+    
+                    <h1>{{ page.title }}</h1>
+    
+                </header>
+                <div class="content">
+    
+                    {{ page.description }}
+    
+                </div>
+            </div>
+        </section>
+
+    {{ content }}
+
+    <!-- Main -->
+    <div id="main" class="alt">
+
+      <!-- One -->
+      <section id="one">
+	{% for post in site.posts %}
+	{% if post.layout == "photo" %}
+	<div class="spotlights">
+		{% if post.title != 404 %}
+			<section>
+			<a href="generic.html" class="image"></a>
+			{% if post.image %}<img src="{{ site.baseurl }}/{{ post.image }}" alt="" data-position="center center" />{% endif %}
+			<div id="{{ post.title }}" class="content">
+				<div class="inner">
+					<header class="major">
+						<h3>{{ post.title }}</h3>
+					</header>
+					<p>{{ post.description }}</p>
+					<ul class="actions">
+						<li><a href="generic.html" class="button">See slideshow</a></li>
+					</ul>
+				</div>
+			</div>
+			</section>
+		{% endif %}
+	{% endif %}
+	{% endfor %}
+	</div>
+      </section>
+
+    </div>
+
+    {% include footer_compact.html %}
+
+  </body>
+
+</html>
