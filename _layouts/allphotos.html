@@ -21,15 +21,8 @@
                     <h1>{{ page.title }}</h1>
     
                 </header>
-                <div class="content">
-    
-                    {{ page.description }}
-    
-                </div>
             </div>
         </section>
-
-    {{ content }}
 
     <!-- Main -->
     <div id="main" class="alt">
@@ -42,7 +35,7 @@
 		{% if post.title != 404 %}
 			<section>
 			<a href="generic.html" class="image"></a>
-			{% if post.image %}<img src="{{ site.baseurl }}/{{ post.image }}" alt="" data-position="center center" />{% endif %}
+			{% if post.image %}<img src="{{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}" alt="" data-position="center center" />{% endif %}
 			<div id="{{ post.title }}" class="content">
 				<div class="inner">
 					<header class="major">
@@ -50,7 +43,7 @@
 					</header>
 					<p>{{ post.description }}</p>
 					<ul class="actions">
-						<li><a href="generic.html" class="button">See slideshow</a></li>
+						<li><a href="{{ site.baseurl }}/photos/{{ post.gallery }}/index.html" class="button">See gallery</a></li>
 					</ul>
 				</div>
 			</div>
