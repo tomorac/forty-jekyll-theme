@@ -6,8 +6,13 @@ layout: page
   height: 300px;
   width: 300px;
   display: inline-block;
-  margin: 1em;
+  margin: 0.1em;
   position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+.gallery-image-wrapper:hover {
+  box-shadow: 0 0 2px 1px #00ADB5;
 }
 .gallery-image {
   margin: auto;
@@ -16,6 +21,8 @@ layout: page
   bottom: 0px;
   max-height: 100%;
   max-width: 100%;
+  padding: 5px;
+  border-radius: 10px;
 }
 </style>
 <h1><a href="/{{ site.gallery.dir }}">{{ page.title }}</a></h1>
