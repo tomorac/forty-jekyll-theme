@@ -21,6 +21,11 @@
                     <h1>{{ page.title }}</h1>
     
                 </header>
+                <div class="content">
+    
+                    {{ page.description }}
+    
+                </div>
             </div>
         </section>
 
@@ -30,12 +35,13 @@
       <!-- One -->
       <section id="one">
 	{% for post in site.posts %}
-	{% if post.layout == "photo" %}
+	{% if post.layout == "post" %}
 	<div class="spotlights">
-		{% if post.title != 404 %}
+		{% if post.title != 404 and post.type == "photo" %}
+			<br />
 			<section>
 			<a href="generic.html" class="image"></a>
-			{% if post.image %}<img src="{{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}" alt="" data-position="center center" />{% endif %}
+			{% if post.image and post.gallery %}<img src="{{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}" alt="" data-position="center center" />{% endif %}
 			<div id="{{ post.title }}" class="content">
 				<div class="inner">
 					<header class="major">

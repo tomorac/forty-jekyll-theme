@@ -21,7 +21,7 @@
 	<div class="inner">
           {% for post in site.posts %}
           {% if post.layout == "post" %}
-  	    {% if post.title != 404 %}
+  	    {% if post.title != 404 and post.type == "blog" %}
 	    <header class="major">
   	      <h1 id="{{ post.title }}">{{ post.title }}</h1>
   	    </header>

@@ -29,20 +29,19 @@
             </div>
         </section>
 
-    {{ content }}
-
     <!-- Main -->
     <div id="main" class="alt">
 
       <!-- One -->
       <section id="one">
 	{% for post in site.posts %}
-	{% if post.layout == "video" %}
+	{% if post.type == "video" %}
 	<div class="spotlights">
-		{% if post.title != 404 %}
+		{% if post.title != 404 and post.type == "video" %}
+		<br />
 		<section>
 		<a href="generic.html" class="image"></a>
-		{% if post.image %}<img src="{{ site.baseurl }}/{{ post.image }}" alt="" data-position="center center" />{% endif %}
+		{% if post.image %}<img src="{{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}" alt="" data-position="center center" />{% endif %}
 		<div id="{{ post.title }}" class="content">
 			<div class="inner">
 				<header class="major">
@@ -50,7 +49,7 @@
 				</header>
 				<p>{{ post.description }}</p>
 				<ul class="actions">
-					<li><a href="generic.html" class="button">Play video</a></li>
+					<li><a href="{{ post.video }}" class="button">Play video</a></li>
 				</ul>
 			</div>
 		</div>
