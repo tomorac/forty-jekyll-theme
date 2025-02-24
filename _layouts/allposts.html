@@ -25,7 +25,13 @@
 	    <header class="major">
   	      <h1 id="{{ post.title }}">{{ post.title }}</h1>
   	    </header>
-  	    {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
+	    {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}" alt="" />
+		<br />
+		<ul class="actions">
+		    <li><a href="{{ site.baseurl }}/photos/{{ post.gallery }}/index.html" class="button">See gallery</a></li>
+		</ul>
+	    </span>
+	    {% endif %}
   	    {% if post.date %}<p>{{ post.date }}</p>{% endif %}
   	    <p>{{ post.content }}</p>
   	    {% endif %}
