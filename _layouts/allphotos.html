@@ -37,7 +37,7 @@
 	{% for post in site.posts %}
 	{% if post.layout == "post" %}
 	<div class="spotlights">
-		{% if post.title != 404 and post.type == "photo" or post.type == "panorama" %}
+		{% if post.type == "photo" or post.type == "panorama" %}
 			<br />
 			<section>
 			<a href="generic.html" class="image"></a>
@@ -55,20 +55,7 @@
 						<li><a href="{{ site.baseurl }}/photos/{{ post.gallery }}/index.html" class="button">See gallery</a></li>
 					{% endif %}
 					{% if post.type == "panorama" %}
-						<li><a id="panorama_viewer" href="assets/html/panorama.html" class="button">See panorama</a></li>
-						<script>
-						window.addEventListener('load', () => {
-							const panoLink = document.getElementById('panorama_viewer');
-							const panoImage = '{{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.panorama }}';
-							const panoType = '{{ post.panorama_type }}';
-							const preview_image = '{{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}';
-							const title = '{{ post.title }}';
-							const author = '{{ post.author }}';
-							const haov = '{{ post.haov }}';
-							const vaov = '{{ post.vaov }}';		
-							panoLink.href = `${panoLink.href}?pano_image=${panoImage}&pano_type=${panoType}&preview_image=${preview_image}&title=${title}&author=${author}&haov=${haov}&vaov=${vaov}`;
-						});
-						</script>
+						<li><a id="panorama_viewer" href="assets/html/panorama.html?pano_image={{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.panorama }}&pano_type={{ post.panorama_type }}&preview_image={{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}&title={{ post.title }}&author={{ post.author }}&haov={{ post.haov }}&vaov={{ post.vaov }}" class="button">See panorama</a></li>
 					{% endif %}
 					</ul>
 				</div>
