@@ -55,7 +55,7 @@
 						<li><a href="{{ site.baseurl }}/photos/{{ post.gallery }}/index.html" class="button">See gallery</a></li>
 					{% endif %}
 					{% if post.type == "panorama" %}
-						<li><a id="panorama_viewer" href="assets/html/panorama.html?pano_image={{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.panorama }}&pano_type={{ post.panorama_type }}&preview_image={{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}&title={{ post.title }}&author={{ post.author }}&haov={{ post.haov }}&vaov={{ post.vaov }}" class="button">See panorama</a></li>
+					<li><a id="panorama_viewer" href="assets/html/panorama.html?pano_image={{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.panorama }}&pano_type={{ post.panorama_type }}&preview_image={{ site.baseurl }}/photos/{{ post.gallery }}/{{ post.image }}&title={{ post.title }}&author={{ post.author }}&haov={{ post.haov }}&vaov={{ post.vaov }}&hfov={{ post.hfov }}" class="button">See panorama</a></li>
 					{% endif %}
 					</ul>
 				</div>

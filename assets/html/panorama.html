@@ -1,18 +1,17 @@
 <!DOCTYPE HTML>
 <!--
     Based on pannellum.org
+    TODO: jekyllize this page
 -->
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panorama</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/pannellum.css"/>
     <script type="text/javascript" src="/assets/js/pannellum.js"></script>
     <style>
-    body {
-        background-color: #222831;
-    }
     #panorama {
         width: 400px;
         height: 300px;
@@ -22,25 +21,41 @@
 </head>
 <body>
 
-<div id="panorama" class="style2"></div>
-<script>
-window.addEventListener('load', () => {
-	const urlParams = new URLSearchParams(
-	  window.location.search,
-	);
+<!-- Header -->
+<header id="header">
+	<a href="https://grajska.si//" class="logo"><strong>Grajska.si</strong> <span>My place of zen</span></a>
+</header>
 
-	pannellum.viewer('panorama', {
-	    "type": urlParams.get('pano_type'),
-	    "panorama": urlParams.get('pano_image'),
-	    "preview": urlParams.get('preview_image'),
-	    "title": urlParams.get('title'),
-	    "author": urlParams.get('author'),
-	    "haov": urlParams.get('haov'),
-	    "vaov": urlParams.get('vaov')
-	});
-});
-</script>
-
+<!-- Main -->
+<div id="main" class="alt">
+	<!-- One -->
+	<section id="one">
+		<div class="inner">
+			<div id="panorama"></div>
+			<script>
+			window.addEventListener('load', () => {
+				const urlParams = new URLSearchParams(
+				  window.location.search,
+				);
+			
+				pannellum.viewer('panorama', {
+				    "type": urlParams.get('pano_type'),
+				    "panorama": urlParams.get('pano_image'),
+				    "preview": urlParams.get('preview_image'),
+				    "title": urlParams.get('title'),
+				    "author": urlParams.get('author'),
+				    "haov": urlParams.get('haov'),
+				    "vaov": urlParams.get('vaov'),
+				    "hfov": urlParams.get('hfov')
+				});
+			});
+			</script>
+		</div>
+		<div class="content" align="center">
+		        <b>Hint: </b>landscape orientation (or a PC) and fullscreen mode recommended; double click to zoom in/out.
+		</div>
+	</section>
+</div>
 </body>
 </html>
 
