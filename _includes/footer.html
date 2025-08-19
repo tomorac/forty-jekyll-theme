@@ -24,10 +24,20 @@
 		<section class="split">
 			<section>
 				<img src="assets/images/alien.png" style="float: right" width="120" height="120" alt="wave" />
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
-					<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+				<div class="inner">
+					<h3>Socials</h3>
+					<ul class="icons">
+						{% for key_value in site.socials %}
+							{% if key_value[1] %}
+								<li>
+									<a href="{{ key_value[1] }}" class="icon alt fa-{{ key_value[0] | downcase }}" target="_blank" rel="noopener noreferrer" aria-label="{{ key_value[0] }}">
+										<span class="label">{{ key_value[0] }}</span>
+									</a>
+								</li>   
+							{% endif %}
+						{% endfor %}
+					</ul>
+
 				</div>
 			</section>
 		</section>
