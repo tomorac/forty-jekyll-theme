@@ -12,6 +12,7 @@
 
     {% include header.html %}
 
+    {% unless site.compact_home %}
     <!-- Banner -->
     <section id="banner" class="major">
         <div class="inner">
@@ -26,6 +27,7 @@
             </div>
         </div>
     </section>
+    {% endunless %}
 
     <!-- Main -->
     <div id="main">
@@ -33,6 +35,7 @@
         <!-- One -->
         {% include tiles.html %}
 
+        {% unless site.compact_home %}
         <!-- Two -->
         <section id="two">
             <div class="inner">
@@ -45,11 +48,15 @@
                 </ul>
             </div>
         </section>
+        {% endunless %}
 
     </div>
 
+    {% unless site.compact_home %}
     {% include footer.html %}
-
+    {% else %}
+    {% include footer_compact.html %}
+    {% endunless %}
 </body>
 
 </html>
