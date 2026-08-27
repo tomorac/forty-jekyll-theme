@@ -4,6 +4,8 @@ pages:
   stage: build
   script:
   - gem install jekyll
+  - apt-get update && apt-get install -y libimage-exiftool-perl
+  - bash scripts/generate-image-descriptions.sh
   - jekyll build -d public
   artifacts:
     paths:

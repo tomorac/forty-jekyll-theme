@@ -4,3 +4,4 @@ _site/
 Gemfile.lock
 *.gem
 .jekyll-cache
+_data/image_descriptions.yml
